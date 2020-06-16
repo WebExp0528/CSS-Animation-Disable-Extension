@@ -5,7 +5,8 @@
     "description": "CSS Animation Disable Chrome extension",
     "icons": {
         "16": "assets/icons/icon16.png",
-        "48": "assets/icons/icon48.png",
+        "32": "assets/icons/icon32.png",
+        "64": "assets/icons/icon64.png",
         "128": "assets/icons/icon128.png"
     },
     "default_locale": "en",
@@ -22,14 +23,10 @@
     "content_scripts": [
         {
             "matches": ["https://*/*"],
-            "css": ["content/content.css"]
-        },
-        {
-            "matches": ["https://*/*"],
             "js": ["content/index.js"]
         }
     ],
-    "permissions": ["tabs", "https://*/*"],
+    "permissions": ["https://*/*"],
 
     "web_accessible_resources": ["assets/*.*"],
 
